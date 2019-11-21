@@ -3,7 +3,7 @@
 ## usersテーブル
 |Column|Type|Options|
 |------|----|-------|
-|email|string|null: false|
+|email|string|null: false, uniqe: true|
 |password|string|null: false|
 |name|string|null: false|
 ### Association
@@ -15,7 +15,7 @@
 |Column|Type|Options|
 |------|----|-------|
 |body|text|null: false|
-|image|string| |
+|image|text|null: false|
 |user_id|integer|null: false, foreign_key: true|
 |group_id|integer|null: false, foreign_key: true|
 ### Association
